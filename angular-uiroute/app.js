@@ -39,6 +39,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         'columnOne@about': { template: 'Look I am a column!' },
 
         'columnTwo@about': {
+          // template: 'Look, I am another column!' }
           templateUrl: 'table-data.html',
           controller: 'scotchController'
         }
@@ -50,7 +51,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 }); // closes $routerApp.config()
 
 // define the scotch controller that we call up in the *about* state
-routerApp.controller('scotchControoler', function($scope) {
+routerApp.controller('scotchController', function($scope) {
   $scope.message = 'test';
 
   $scope.scotches = [
